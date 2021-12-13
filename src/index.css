@@ -1,13 +1,60 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap');
+
+html , body > * {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  height: 100%;
+  font-family: 'Exo', sans-serif;
+  background: #5C8DFF;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.centerDiv {
+  display:flex;
+  justify-content:center
+  ;align-items:center;
 }
+
+button {
+  border-radius: 5px;
+  border: 0px solid white;
+  background-color: #427afd;
+  width: 230px;
+  height: 50px;
+}
+
+input[type=text], input[type=number]{
+  width: 230px;
+  height: 25px;
+}
+
+
+select {
+  width: 237px;
+  height: 33px;
+}
+
+.main > * {
+  border: 1px solid black;
+}
+
+.main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.7fr 0.4fr 0.7fr; 
+  grid-template-rows: 1fr 2.4fr 0.2fr; 
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". formHolder ."
+    ". . .";
+}
+
+.formHolder {
+  grid-area: formHolder;
+  background: white;
+  border-radius: 30px;    
+}
+
+
