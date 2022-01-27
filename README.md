@@ -1,4 +1,4 @@
-# DEMO FRONT-END FOR GIST MD
+#	Patient info register FRONT-END
 
 ### 1. Set up api port 
 set up the following api port in `src\components\main.tsx`\
